@@ -146,6 +146,12 @@ body {
   font-weight: 400;
   src: local('Pathway Gothic One Regular'), local('PathwayGothicOne-Regular'), url(https://fonts.gstatic.com/s/pathwaygothicone/v7/MwQrbgD32-KAvjkYGNUUxAtW7pEBwx-tS1Za.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
 /*Navigation*/
 nav.page-navigation {
   width: 80px;
@@ -162,6 +168,282 @@ nav.page-navigation a {
   padding: 0.6em 10%;
   width: 80%;
 }
+/*BIO*/
+timeline-about {
+  z-index: 1000;
+}
+.timeline-bio {
+  -moz-border-radius: 6px;
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  -webkit-border-radius: 6px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  margin: 120px auto 120px;
+  padding: 0 20px 20px;
+  text-align: center;
+  max-width: 700px;
+  z-index: 1000;
+}
+.timeline-bio:hover .photo-flip {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.timeline-bio:hover .photo-flip img:first-child {
+  opacity: 0;
+}
+.timeline-bio:hover .photo-flip img:last-child {
+  opacity: 1;
+}
+.timeline-bio h2 {
+  color: #333333;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.timeline-bio h4 {
+  color: #00baff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+.timeline-bio p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.timeline-photo-flip {
+  -moz-box-shadow: 0 0 0 13px #f0f0f0;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 0 0 13px #f0f0f0;
+  -webkit-transition: all 0.3s ease-in-out;
+  border-radius: 100px;
+  box-shadow: 0 0 0 13px #f0f0f0;
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  top: -60px;
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+}
+.timeline-photo-flip img {
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  border-radius: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+.timeline-photo-flip img:first-child {
+  z-index: 1;
+}
+.timeline-photo-flip img:last-child {
+  -webkit-transform: rotateY(180deg);
+  opacity: 0;
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+timeline-skills {
+  z-index: 1000;
+}
+.timeline-skills {
+  -moz-border-radius: 6px;
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  -webkit-border-radius: 6px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  margin: 120px auto 120px;
+  padding: 0 20px 20px;
+  text-align: center;
+  max-width: 700px;
+  z-index: 1000;
+}
+.timeline-skills:hover .photo-flip {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.timeline-skills:hover .photo-flip img:first-child {
+  opacity: 0;
+}
+.timeline-skills:hover .photo-flip img:last-child {
+  opacity: 1;
+}
+.timeline-skills h2 {
+  color: #333333;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.timeline-skills h4 {
+  color: #00baff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+.timeline-skills p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.timeline-skills-photo-flip-hold {
+  -moz-box-shadow: 0 0 0 13px #f0f0f0;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 0 0 13px #f0f0f0;
+  -webkit-transition: all 0.3s ease-in-out;
+  border-radius: 100px;
+  box-shadow: 0 0 0 13px #f0f0f0;
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  top: -60px;
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+}
+.timeline-skills-photo-flip-hold img {
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  border-radius: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+.timeline-skills-photo-flip-hold img:first-child {
+  z-index: 1;
+}
+.timeline-skills-photo-flip-hold img:last-child {
+  -webkit-transform: rotateY(180deg);
+  opacity: 0;
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+.title-skills {
+  font-family: "@font_family_1";
+  font-size: 2em;
+  letter-spacing: 10px;
+  margin-top: 4em;
+  margin: 4rem auto;
+  text-align: center;
+  transition: all 400ms ease-in-out;
+}
+.bar {
+  margin: 2em auto;
+  width: 80%;
+}
+.skill {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  text-transform: uppercase;
+  text-align: left;
+}
+.speech-bubble {
+  border-radius: 0.3em;
+  display: none;
+  font-size: 0.75em;
+  line-height: 2em;
+  min-width: 3em;
+  position: absolute;
+  text-align: center;
+  top: -2.7em;
+}
+.speech-bubble:after {
+  border: 0.5em solid transparent;
+  content: "";
+  left: 50%;
+  margin-left: -0.5em;
+  position: absolute;
+  top: 100%;
+}
+.html {
+  background: #fdeeed;
+  left: calc(80% - 1.5em);
+}
+.html:after {
+  border-top-color: #fdeeed;
+}
+.photo {
+  background: #fbc9c4;
+  left: calc(70% - 1.5em);
+}
+.photo:after {
+  border-top-color: #fbc9c4;
+}
+.friends {
+  background: #f6877c;
+  left: calc(100% - 1.5em);
+}
+.friends:after {
+  border-top-color: #f6877c;
+}
+.jquery {
+  background: #fde4e1;
+  left: calc(25% - 1.5em);
+}
+.jquery:after {
+  border-top-color: #fde4e1;
+}
+.java {
+  background: #fcd9d5;
+  left: calc(25% - 1.5em);
+}
+.java:after {
+  border-top-color: #fcd9d5;
+}
+.illustrator {
+  background: #f9b3ac;
+  left: calc(95% - 1.5em);
+}
+.illustrator:after {
+  border-top-color: #f9b3ac;
+}
+.indesign {
+  background: #f89d94;
+  left: calc(50% - 1.5em);
+}
+.indesign:after {
+  border-top-color: #f89d94;
+}
+.bar-outer {
+  background: #EEEEEE;
+  border-radius: 0.3em;
+  height: 1.25em;
+  position: relative;
+}
+.bar-inner {
+  border-radius: 0.3em;
+  height: 1.25em;
+  width: 0;
+}
+.ht {
+  background: #fdeeed;
+}
+.jq {
+  background: #fde4e1;
+}
+.sk {
+  background: #fcd9d5;
+}
+.ph {
+  background: #fbc9c4;
+}
+.il {
+  background: #f9b3ac;
+}
+.in {
+  background: #f89d94;
+}
+.fl {
+  background: #f6877c;
+}
+/*timeline work history*/
 .timeline {
   display: flex;
   margin: 0 auto;
